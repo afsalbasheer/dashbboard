@@ -18,7 +18,7 @@ function App() {
   const [isLoggedIn, setIsLoggedIn] = useAtom(isLoggedInAtom)
 
   return (
-      <BrowserRouter>
+      <BrowserRouter basename={window.location.pathname || ''}>
         <Routes>
           <Route exact path="/" element={<Login/>} />
           <Route 
