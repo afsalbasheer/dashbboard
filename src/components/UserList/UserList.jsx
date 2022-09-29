@@ -48,7 +48,7 @@ function UserList() {
   const [rowsPerPage, setRowsPerPage] = useState(6);
 
   const updateList = () => {
-    axios.get(" http://localhost:3000/users").then((response)=>{
+    axios.get("https://fake-api-user.herokuapp.com/users").then((response)=>{
       setUsersList(response.data)
     })
   }
@@ -63,7 +63,7 @@ function UserList() {
   };
 
   const onDelete = (id) => {
-    axios.delete(`http://localhost:3000/users/${id}`).then((response)=>{
+    axios.delete(`https://fake-api-user.herokuapp.com/users/${id}`).then((response)=>{
       if(response.status === 200){
         let newUsersList = usersList.filter(item => item.id != id) 
         setUsersList(newUsersList)

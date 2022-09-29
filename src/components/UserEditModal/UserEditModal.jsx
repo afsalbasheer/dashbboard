@@ -37,7 +37,7 @@ export default function UserEditModal({ userInfo, onClose, updateList }) {
         userInfo.first_name = firstName
         userInfo.last_name = lastName
         userInfo.email = email
-        axios.put(`http://localhost:3000/users/${userInfo.id}`, userInfo).then((response)=>{
+        axios.put(`https://fake-api-user.herokuapp.com/users/${userInfo.id}`, userInfo).then((response)=>{
             if(response.status === 200){
                 updateList()
                 onClose()

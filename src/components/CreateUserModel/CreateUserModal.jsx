@@ -40,7 +40,7 @@ export default function CreateUserModal({ onClose, updateList }) {
             email
         }
         console.log(reqData)
-        axios.post(`http://localhost:3000/users`, reqData).then((response)=>{
+        axios.post(`https://fake-api-user.herokuapp.com/users`, reqData).then((response)=>{
             if(response.status === 201){
                 updateList()
                 onClose()

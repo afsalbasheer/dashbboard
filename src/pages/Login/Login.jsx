@@ -15,7 +15,7 @@ function Login() {
 
 
   useEffect(()=>{
-    axios.get("http://localhost:3000/admin").then((response)=>{
+    axios.get("https://fake-api-user.herokuapp.com/admin").then((response)=>{
       setFindId(response.data[0])
     })
   },[])
