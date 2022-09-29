@@ -1,0 +1,15 @@
+.buttonField{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.deleteBtn{
+    color: red;
+    cursor: pointer;
+}
+.modalBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100% !important;
+}

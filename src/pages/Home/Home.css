@@ -1,0 +1,10 @@
+.home{
+    flex: 4;
+}
+.top-container{
+    display: flex;
+    justify-content: space-between;
+}
+.featured{
+    flex: 1;
+}
